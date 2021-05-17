@@ -1,0 +1,113 @@
+.hero{
+    display: flex;
+    .description_hero{
+        width: 699px;
+        height: 488px;
+        margin-top: 154px;
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            color: #626262;
+            letter-spacing: 0.115em;
+        }
+        h1{
+            font-family: "Merriweather";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 84px;
+            line-height: 106px;
+            color: #080029;
+            margin-top: -10px;
+        }
+        .button_block{
+            display: flex;
+            width: 573px;
+            justify-content: space-between;
+            button{
+                width: 250px;
+                height: 61px;
+                border: none;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: #080029;
+                border: 2px solid #080029;
+                border-radius: 5px;
+                background: inherit;
+
+            }
+            button:hover{
+                opacity: .8;
+            }
+            .btn_active{
+                background: #080029;
+                color: white;
+            }
+
+        }
+    }
+    .hero_img{
+        margin-top: 79px;
+        margin-left: 39px;
+    }
+
+}
+
+//style section how zoo
+.howzoo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 137px;
+    height: 980px;
+    .hero_img{
+        width: 512px;
+        height: 760px;
+        margin: auto 0;
+    }
+    .description_howzoo{
+        max-width: 696px;
+        min-height: 477px;
+        margin: auto 0;
+        p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: 0.115em;
+            color: #0B0B0B;
+        }
+        h3{
+            font-family: "Merriweather";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 145%;
+            color: #080029;
+        }
+        .bottom_p{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            color: #747474;
+        }
+        .try_now{
+            width: 218px;
+            height: 61px;
+            background: #0F0049;
+            border-radius: 5px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FCFCFC;
+            margin-top: 60px;
+        }
+        .try_now:hover{
+            opacity: .7;
+        }
+    }
+}
+
+

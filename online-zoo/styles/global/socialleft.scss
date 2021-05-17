@@ -1,0 +1,52 @@
+.social {
+    position: fixed;
+    top: 0px;
+    bottom: 40px;
+    height: 760px;
+    width: 90px;
+    display: flex;
+    left: 60px;
+    background-color: #FCFCFC;
+    flex-direction: column;
+    .logo_link{
+        width: 51.87px;
+        height: 40px;
+        margin: 25px auto;
+    }
+    .logo{
+        display: inline-block;
+        width: 51.87px;
+        height: 40px
+    }
+    &_icons {
+        width: 24px;
+        height: 172px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 275px auto 0px auto;
+        padding: 0;
+    }
+}
+
+.social_icons_item :hover,
+.social_icons_item :focus,
+.social_icons_item :active {
+    opacity: .7;
+}
+
+.social_icons_item_link_img {
+    width: 24px;
+    height: 24px;
+}
+
+.top {
+    display: block;
+    width: 48px;
+    height: 48px;
+    margin: 100px auto 0 auto;
+}
+
+.top:hover {
+    opacity: .8;
+}

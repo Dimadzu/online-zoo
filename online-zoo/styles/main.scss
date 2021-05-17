@@ -1,0 +1,26 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
+
+//landing 1920px
+@import "global/header.scss";
+@import "global/socialleft.scss";
+@import "section/hero.scss";
+@import "section/famouspets.scss";
+@import "section/payfeed.scss";
+@import "section/testimonials.scss";
+@import "section/zoogeography.scss";
+@import "global/footer.scss";
+
+
+//Zoos Map 1920px
+@import "global/asideanimals.scss";
+@import "section/zoosmap.scss";
+
+//Zoos Translation 1920px
+@import "global/zoospage.scss";
+
+//forbidden 1920px
+@import "section/forbidden.scss";

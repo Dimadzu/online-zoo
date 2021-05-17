@@ -1,0 +1,197 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content="IE=edge")
+    meta(name='viewport' content='width=device-width')
+    link(rel="stylesheet" href="../css/main.min.css")
+    title Online-zoo
+  body
+    .container
+      header.header
+        .menu
+          nav.nav
+            ul.nav_menu
+                each value, index in {'About' : 'index', 'Map' : 'zoosmap', 'Zoos' : 'zoos/panda', 'Contact us' : 'forbidden', 'Design' : 'figma'}
+                    li.nav_menu_item
+                        if value==='zoos/panda'
+                            a.nav_menu_item_link.nav_menu_item_link_active(href="./") Zoos
+                        else if  value==='figma'
+                            a.nav_menu_item_link(href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo") Design
+                        else
+                            a.nav_menu_item_link(href="../"+ value + ".html")= index
+        img.profile(src="../assets/images/profile.png" alt="profile")
+      aside.zoomaps_aside.pandapage
+        a.logo_link(href="../index.html") 
+          img.logo(src="../assets/images/logo.png" alt="logo")
+        .zoomaps_aside_slider 
+        .zoomaps_aside_slider_control
+          img.zoomaps_aside_slider_control_arrow(src="../assets/images/up.png" alt="control") 
+          .slider_wrapper
+            .slider_wrapper_nohidden 
+              ul.carousel 
+                li.carousel_item 
+                  a.carousel_item_link(href="/zoos/panda.html")
+                    img.carousel_item_link_img(src="../assets/images/panda_map.png" alt="panda")
+                li.carousel_item 
+                  a.carousel_item_link(href="/zoos/aligator.html")
+                    img.carousel_item_link_img(src="../assets/images/crocodile_map.png" alt="crocodile")
+                li.carousel_item.carousel_item_active 
+                  a.carousel_item_link(href="/zoos/eagle.html")
+                    img.carousel_item_link_img(src="../assets/images/eagle_map.png" alt="eagle")
+                li.carousel_item 
+                  a.carousel_item_link(href="/zoos/gorila.html")
+                    img.carousel_item_link_img(src="../assets/images/muncky_map.png" alt="muncky")
+                li.carousel_item 
+                  a.carousel_item_link.question(href="/")
+                    h4 ?
+        .zoomaps_aside_slider_control
+          img.zoomaps_aside_slider_control_arrow.down(src="../assets/images/up.png" alt="control")
+      section.maincam 
+        .maincam_wrap 
+          iframe.video(src="https://www.youtube.com/embed/mS4ij3CEy2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+          .desc_animal
+            .desc_animal_title_wrap
+              img.desc_animal_title_wrap_img(src="../assets/images/avatar_eagle.png")
+              .desc 
+                h4 SRaptor resourse project
+                p.watch 235 watching now
+            .desc_animal_cont 
+              h4 You can donate to this animals for a wonderful lunch.
+              p Pandas will receive a mixture of bamboo shoots, carrots and apples. Animals will receive your gift in about 5-15 minutes
+              button.feed Feed the eagle
+      section.othercams 
+        .wrapper
+          h3.other_title Other cams
+          .grid_cams 
+            .item.item_eagle
+              .hidden
+                h4 112 viewers 
+                a.watch_now(href="/")
+                  button Watch now 
+            .item.item_eagle
+              .hidden
+                h4 112 viewers 
+                a.watch_now(href="/")
+                  button Watch now 
+            .item.item_eagle
+             .hidden
+                h4 112 viewers 
+                a.watch_now(href="/")
+                  button Watch now 
+            .item.item_eagle
+              .hidden
+                h4 112 viewers 
+                a.watch_now(href="/")
+                  button Watch now 
+        //-   .button_wrapper 
+        //-     button.btn_left 
+        //-       img.arrow_left(src="../assets/images/arrow_right.png" alt="arrow")
+        //-     button.btn_left 
+        //-       img.arrow_right(src="../assets/images/arrow_right.png" alt="arrow")
+      section.interesting
+        .wrapper 
+          h3.title Interesting facts
+          p.title_p The yards at the Shenshuping Panda Center in China's Wolong Valley are filled with bamboo, making them very happy. Watch live and learn more about pandas.
+          .acordeon
+            .acordeon_title 
+              p Species population
+              h4.hide _
+            .acordeon_description 
+              p.desc Most American alligators live in Florida and Louisiana. In Florida alone, their number is 1 million individuals.Florida is the only place on Earth where alligators and real crocodiles coexist.
+            .acordeon_title 
+              p Region of habitat
+              h4.hide _
+            .acordeon_description 
+              p.desc The distribution area of ​​eagles is quite wide, and the habitat depends on the species of bird. Nevertheless, all representatives of the representatives prefer to settle away from civilization and humans, choosing mountainous or semi-open landscapes
+              p.desc For example, the golden eagle inhabiting the territory of Russia (in the north of the Caucasus and the south of Primorye) nests in a hard-to-reach forest zone, and its Australian relative, the wedge-tailed golden eagle, feels comfortable in the forests of New Guinea.Steppe eagles live in steppes and semi-desert zones, inhabiting them from Transbaikalia to the Black Sea coast. The burial eagle took a fancy to the forest-steppes of Ukraine, the Kazakh steppe regions, the forests of the Czech Republic, Spain and Romania.Eagles are found in Iran and China, in Hungary and Slovakia, in Greece and Germany.
+            .acordeon_title 
+              p Nutrition
+              h4.hide _
+            .acordeon_description 
+              p.desc Currently, birds of prey from the Hawk family, represented by:
+              p.desc Hawk eagle (A.fаsciata or H.fаsciatus); 
+                | Indian hawk eagle (Lorhotriorchis kieneri);
+                | Berkut (A. chrysaetos);
+                | Stone eagle (A. arakh);
+                | Indian hawk eagle (Lorhotriorchis kieneri);
+              p.desc The birds received the conservation status "Vulnerable Species":
+
+
+
+      section.payfeed(id="payfeed") 
+        .wrapper.pay_wrapper
+          .payfeed_start 
+            p Pay & feed
+            .item_pay_feed 
+                img.item_pay_feed_img(src="../assets/images/paysafe.png" alt='pay')
+                .item_pay_feed_desc 
+                    h3 Pay with VISA card
+                    p On the payment page, you need to enter the details of your "Visa" card and make a transfer. The operation will not take more than ~2 minutes.
+            img.vector.vector_1(src="../assets/images/vector1.png")
+          .flex
+            img.vector.vector_2(src="../assets/images/vector2.png")        
+            .item_pay_feed.right
+                img.item_pay_feed_img(src="../assets/images/payfly.svg" alt='pay')
+                .item_pay_feed_desc 
+                    h3 Payment goes to the zoo
+                    p Payment goes to the account of the zoo and volunteers with employees receive a notification about the donation.
+          .item_pay_feed.sec3
+              img.item_pay_feed_img(src="../assets/images/paymeeting.png" alt='pay')
+              .item_pay_feed_desc 
+                h3 The selected animal receives a treat
+                p The staff takes the food you need for your chosen animal and delivers it to the animal. With your help, the animal is happy!
+      footer.footer 
+        .wrapper
+          .footer_cont 
+            .footer_cont_item.footer_cont_item_1
+                a.logo_link(href="./")
+                    img.footer_logo(src="../assets/images/logo_footer.png" alt="logo")
+                .logo_school 
+                    img.digital(src="../assets/images/footer_yem_digital.png")
+                    p x 
+                    img.logo_rs(src="../assets/images/rs_school_logo.png") 
+            .footer_cont_item.footer_cont_item_2
+                h2 Navigation
+                nav.footer_nav 
+                    ul.footer_nav_ul 
+                        li.footer_nav_ul_li 
+                            a.footer_nav_ul_li_link(href="#hero") Watch online
+                        li.footer_nav_ul_li 
+                            a.footer_nav_ul_li_link(href="#howzoo") How it works
+                        li.footer_nav_ul_li 
+                            a.footer_nav_ul_li_link(href="#fameous") Famous pets
+                        li.footer_nav_ul_li 
+                            a.footer_nav_ul_li_link(href="#payfeed") Pay & feed
+                        li.footer_nav_ul_li 
+                            a.footer_nav_ul_li_link(href="#testimonials") Testimonials
+                        li.footer_nav_ul_li 
+                            a.footer_nav_ul_li_link(href="#zoogeography") Zoogeography
+
+
+            .footer_cont_item.footer_cont_item_3
+                .cont_item_3
+                    h2 Support of volunteers
+                    p You can thank the volunteers for their work. For example, caring for animals and sincere love for them.
+                    button.donate Donate for volunteers 
+                    ul.social_footer 
+                        li 
+                            a.social_footer_link(href="https://www.instagram.com/?hl=ru" target="_blank") Instagram
+                        li 
+                            a.social_footer_link(href="https://uk-ua.facebook.com/" target="_blank") Facebook
+                        li 
+                            a.social_footer_link(href="https://twitter.com/?lang=ru" target="_blank") Twitter
+          .footer_cont_bottom
+            p Copyright ©RSSchool and ©Yem Digital 2020 - 2021
+            p Designed by Vladislav Chernov
+         
+
+              
+            
+
+
+
+      
+ 
+
+
+    script(src="js/main.min.js")

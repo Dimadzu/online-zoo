@@ -1,0 +1,17 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content="IE=edge")
+    meta(name='viewport' content='width=device-width')
+    link(rel="stylesheet" href="css/main.min.css")
+    title Online-zoo
+  body
+    .container
+      h1.title_hidden_teg Online Zoo
+      .wrapper_map
+        include ../section/section_zoo_map/zoosmapsection.pug
+        include ../section/section_zoo_map/header.pug
+        include ../global_section/asideanimals.pug
+      
+
+    script(src="js/main.min.js")

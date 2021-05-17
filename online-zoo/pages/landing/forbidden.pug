@@ -1,0 +1,44 @@
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content="IE=edge")
+    meta(name='viewport' content='width=device-width')
+    link(rel="stylesheet" href="css/main.min.css")
+    title Online-zoo
+  body
+    .container.oops
+        h1.title_hidden_teg Online Zoo
+        header.header.zoomap_header
+            .menu
+                a.logo_link(href="/") 
+                    img.logo(src="./assets/images/logo.png" alt="logo")
+                nav.nav
+                    ul.nav_menu
+                        each value, index in {'About' : 'index', 'Map' : 'zoosmap', 'Zoos' : 'zoos/panda', 'Contact us' : 'forbidden', 'Design' : 'figma'}
+                            li.nav_menu_item
+                                if value==='forbidden'
+                                    a.nav_menu_item_link.nav_menu_item_link_active(href="/forbidden.html") Contact us
+                                else if  value==='figma'
+                                    a.nav_menu_item_link(href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo") Design
+                                else
+                                    a.nav_menu_item_link(href="./"+ value + ".html")= index
+            img.profile(src="./assets/images/profile.png" alt="profile") 
+           
+        .wrapper.oops_wrapper
+            section.oops_content 
+                .oops_content_desc 
+                    h4 404
+                    h3 Oops... you seem to be lost
+                    p Just don't be discouraged, but there is no such page :(
+                    p We can offer you to watch a video with cute pandas or return to the main page   
+                    a.back_to_mine(href="/")
+                        button Back to main page
+                .oops_content_video 
+                    img.oops_video(src="./assets/images/oops_video.png")
+                p.click You can write to support and we will try to solve your problem, 
+                    a(href="#") click here to go to support.
+        include ../global_section/footer.pug
+
+
+
+    script(src="js/main.min.js")

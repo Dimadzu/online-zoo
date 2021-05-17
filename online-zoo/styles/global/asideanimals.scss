@@ -1,0 +1,69 @@
+.zoomaps_aside{
+    width: 90px;
+    height: 670px;
+    background-color: #FCFCFC;
+    margin-left: 60px;
+    &_slider {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        &_control_arrow{
+            width: 86px;
+        
+        }
+        &_control_arrow:hover{
+            opacity: .8;
+            
+        }
+        
+    }
+    .slider_wrapper{
+        width: 55px;
+        height: 436px;
+        margin: 29px auto;
+        &_nohidden{
+
+            .carousel{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &_item{
+                    width: 55px;
+                    height: 55px;
+                    border: 2px solid #D9E8FF;
+                    border-radius: 50px;
+                    transition: 0.5s;
+                    &_link{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        display: flex;
+
+                        &_img{
+                            @include centerer-xy;
+                            width: 30px;
+                            height: 34px;
+                            margin: auto;
+                        }
+                    }
+                }
+                &_item:hover{
+                    border: 2px solid #609FFF;
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+                //for zoos page
+                &_item_active{
+                    border: 2px solid #609FFF;
+                    transform: scale(1.1);
+                }
+
+
+            }
+        }
+    }
+    .down{
+        transform: rotate(180deg);
+    }
+}

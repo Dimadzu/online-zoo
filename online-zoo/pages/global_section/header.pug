@@ -1,0 +1,13 @@
+header.header
+    .menu
+        nav.nav
+            ul.nav_menu
+                each value, index in {'About' : 'index', 'Map' : 'zoosmap', 'Zoos' : 'zoos/panda', 'Contact us' : 'forbidden', 'Design' : 'figma'}
+                    li.nav_menu_item
+                        if value==='index'
+                            a.nav_menu_item_link.nav_menu_item_link_active(href="./") About
+                        else if  value==='figma'
+                            a.nav_menu_item_link(href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo") Design
+                        else    
+                            a.nav_menu_item_link(href="./"+ value + ".html")= index
+    img.profile(src="./assets/images/profile.png" alt="profile")

@@ -1,0 +1,347 @@
+.pandapage{
+    position: fixed;
+    height: 760px;
+    top: 9px;
+    bottom: 40px;
+    border: 2px solid #F0F0F0;
+    padding-top: 22px;
+    .logo_link{
+        display: block;
+        margin: auto;
+        width: 44.62px;
+        height: 35.38px;
+        .logo{
+            width: 100%;
+        }
+
+    }
+    .zoomaps_aside_slider{
+        margin-top: 25px;
+    }
+}
+.question{
+    h4{
+        font-size: 18px;
+        line-height: 154%;
+        display: block;
+        margin: auto;
+    }
+}
+
+//Style section Main cam
+.maincam{
+    height: 745px;
+    width: 100%;
+    &_wrap{
+        display: flex;
+        margin-top: 90px;
+        height: 600px;
+        margin-left: 184px;
+        .video{
+            height: 100%;
+            width: 1064px;
+
+        }
+        .desc_animal{
+            width: 508px;
+            margin-left: 40px;
+            padding-right: 105px;
+            &_title_wrap{
+                display: flex;
+                height: 110px;
+                border-bottom: 1px solid #E3E3E3;
+                &_img{
+                    width: 70px;
+                    height: 70px;
+                    display: block;
+                    border-radius: 50px;
+                    
+                }
+                .desc{
+                    margin-left: 25px;
+                    h4{
+                        font-size: 24px;
+                        line-height: 28px;
+                        font-style: normal;
+                        font-weight: normal;
+                        color: #0B0B0B;
+                        padding: 0;
+                        margin: 0;
+
+                    }
+                    p{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 154%;
+                        color: #747474;
+                        margin: 0;
+                        position: relative;
+                        margin-left: 25px;
+                    }
+                    .watch::before{
+                        position: absolute;
+                        content: '';
+                        background-image: url(./../../assets/images/eye.svg);
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        top: 5px;
+                        left: -25px;
+                    }
+                    
+                }
+
+            }
+            .desc_animal_cont{
+                h4{
+                    font-family: "Merriweather";
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 26px;
+                    line-height: 145%;
+                    color: #080029;
+                    margin: 25px 0 0 0;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 154%;
+                    color: #747474;
+                    max-width: 336px;
+                    margin-top: 30px;
+                }
+                .feed{
+                    width: 284px;
+                    height: 61px;
+                    background: #0F0049;
+                    border-radius: 5px;
+                    border: inherit;
+                    color: #FCFCFC;
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-top: 35px;
+                }
+                .feed:hover{
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+//Style section other cams
+.othercams {
+    width: 100%;
+    height: 441px;
+   .other_title{
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 145%;
+    color: #080029;
+    margin: 0;
+   }
+   .other_title::after{
+    content: "";
+    background-image: url(../../assets/images/polygon1.png);
+    display: inline-block;
+    width: 14px;
+    height: 10px;
+    margin: 6px 12px;
+   }
+   .grid_cams{
+    margin-top: 40px;
+    width: 1432px;
+    height: 184px;
+    display: grid;
+    grid-template-columns: 328px 328px 328px 328px;
+    grid-template-rows: 184px 184px 184px 184px;
+    grid-gap: 40px;
+    .item {
+        background-image: url(../../assets/images/othercams_panda1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        text-align: center;
+        .hidden{
+            opacity: 0;
+            transition: 0.4s;
+            h4{
+                margin: 55px 0 20px 0;
+                font-family: "Merriweather";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 145%;
+                text-align: center;
+                color: #FCFCFC;
+                display: inline-block;
+                border-bottom: 1px solid #FCFCFC;
+            }
+            .watch_now {
+                display: block;
+                text-decoration: none;
+                button {
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center; 
+                    color: #FCFCFC;
+                    border: none;
+                    background: inherit;
+                    transition-duration: 0.6s;
+                    }
+                button::after {
+                    content: "";
+                    background-image: url(../../assets/images/arrow_after.png);
+                    display: inline-block;
+                    width: 21px;
+                    height: 13px;
+                    margin: 0px 10px;
+            }
+        }
+    }
+    }
+    .item:hover .hidden{
+        opacity: 1;
+        transition: 0.4s;
+    }
+    .item:nth-child(2){
+        background-image: url(../../assets/images/othercams_panda2.png);
+        
+    }
+    .item:nth-child(3){
+        background-image: url(../../assets/images/othercams_panda3.png);
+    }
+    .item:nth-child(4){
+        background-image: url(../../assets/images/othercams_panda4.png);
+    }
+
+    // background image to aligator page
+
+    .item_aligator:nth-child(1){
+        background-image: url(../../assets/images/othercams_aligator1.png);
+        }
+    .item_aligator:nth-child(2){
+        background-image: url(../../assets/images/othercams_aligator2.png);
+        }
+    .item_aligator:nth-child(3){
+        background-image: url(../../assets/images/othercams_aligator3.jpg);
+        }
+
+    //background image to eagle page
+
+    .item_eagle:nth-child(1){
+        background-image: url(../../assets/images/othercams_eagle1.png);
+    }
+    .item_eagle:nth-child(2){
+        background-image: url(../../assets/images/othercams_eagle2.png);
+    }
+    .item_eagle:nth-child(3){
+        background-image: url(../../assets/images/othercams_eagle3.png);
+    }
+    .item_eagle:nth-child(4){
+        background-image: url(../../assets/images/othercams_eagle4.png);
+    }
+
+    //background image to gorilla  page
+    .item_gorilla:nth-child(1){
+        background-image: url(../../assets/images/othercams_gorilla1.png);
+    }
+    .item_gorilla:nth-child(2){
+        background-image: url(../../assets/images/othercams_gorilla2.png);
+    }
+    .item_gorilla:nth-child(3){
+        background-image: url(../../assets/images/othercams_gorilla3.jpg);
+    }
+
+   }
+   .wrapper{
+
+    .button_wrapper {
+        margin-top: 40px;
+        button{
+            background: #0F0049;
+            padding: 0;
+        }
+        button:hover{
+            opacity: .7;
+        }
+    }
+   } 
+}
+// Style section interesting
+.interesting{
+
+    .wrapper{
+
+        .title{
+            margin: 10px 0;
+            font-family: "Merriweather";
+            font-style: normal;
+            font-weight: bold;
+            font-size: 36px;
+            line-height: 145%;
+            color: #080029;
+        }
+        .title_p{
+            margin-top: 30px;
+            width: 512px;
+            font-size: 18px;
+            color: #747474;
+            display: inline-block;
+        }
+        .acordeon{
+
+            &_title {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 75px;
+                p{
+                    font-size: 26px;
+                    line-height: 145%;
+                    color: #080029;
+                }
+                .hide{
+                    display: inline-block;
+                    width: 30px;
+                }
+            }
+            &_description{
+                width: 100%;
+                border-bottom: 1px solid #D3D3D3;
+                .desc{
+                display: inline-flex;
+                width: 1381px;
+                font-size: 18px;
+                line-height: 154%;
+                color: #747474;
+                }
+                .detalis{
+                    display: flex;
+                    justify-content: start;
+                    margin-bottom: 15px;
+                    p{
+                        margin: 0;
+                        font-size: 18px;
+                        line-height: 154%;
+                        color: #747474;
+                    }
+                    a{  
+                        margin-left: 5px;
+                        display: inline-block;
+                        color: #609FFF;
+                        text-decoration: #609FFF;
+                        font-size: 18px;
+                        line-height: 154%;
+                    }
+                }
+                }
+            
+        }  
+    }
+}

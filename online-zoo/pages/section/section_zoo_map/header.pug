@@ -1,0 +1,16 @@
+header.header.zoomap_header
+    .menu
+        a.logo_link(href="/") 
+            img.logo(src="./assets/images/logo.png" alt="logo")
+        nav.nav
+            ul.nav_menu
+                each value, index in {'About' : 'index', 'Map' : 'zoosmap', 'Zoos' : 'zoos/panda', 'Contact us' : 'forbidden', 'Design' : 'figma'}
+                    li.nav_menu_item
+                        if value==='zoosmap'
+                            a.nav_menu_item_link.nav_menu_item_link_active(href="/zoosmap.html") Map
+                        else if  value==='figma'
+                            a.nav_menu_item_link(href="https://www.figma.com/file/74wXlorl9mZQP0uhqDg83j/Online-Zoo") Design
+                        else
+                            a.nav_menu_item_link(href="./"+ value + ".html")= index
+    img.profile(src="./assets/images/profile.png" alt="profile") 
+            

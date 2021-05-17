@@ -1,0 +1,111 @@
+.zoos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    &_pos_wrap{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        .card {
+            width: 344px;
+            height: 512px;
+            box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
+            border-radius: 15px;
+            text-align: center;
+            background-color: #FCFCFC;
+            position: absolute;
+            left: 602px;
+            top: 228px;
+            &_img {
+                width: 100%;
+                display: block;
+                height: 218px;
+                border-radius: 15px 15px 0 0;
+            }
+            h3 {
+                font-family: "Merriweather";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 145%;
+                color: #080029;
+                margin-top: 20px;
+                padding: 0;
+            }
+            p {
+                margin: -20px 40px 0 40px;
+                font-size: 18px;
+                line-height: 154%;
+                color: #747474;
+            }
+            .watch_now {
+                text-decoration: none;
+                button {
+                    margin-top: 25px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-align: center;
+                    color: #3888FF;
+                    border: none;
+                    background: inherit;
+                    transition-duration: 0.6s;
+                }
+                button::after {
+                    content: "";
+                    background-image: url(./../assets/images/arrow_after.png);
+                    display: inline-block;
+                    width: 21px;
+                    height: 13px;
+                    margin: 0px 10px;
+                }
+            }
+            .watch_now:hover button {
+                transform: scale(1.1);
+                transition-duration: 0.6s;
+            }
+        }
+        .map_item {
+            opacity: .8;
+            position: absolute;
+            transition-duration: 0.8s;
+            width: 120px;
+            height: 155px;
+            background-image: url(./../assets/images/ellipse.png);
+            background-position: center;
+            background-size: contain;
+            padding-top: 15px;
+            &_img {
+                display: flex;
+                margin: 10px auto;
+                width: 47px;
+                height: 56px;
+            }
+            &_img_eagle {
+                left: 132px;
+                top: 166px;
+            }
+            &_img_crocodile {
+                left: 251px;
+                top: 205px;
+            }
+            &_img_muncky {
+                top: 429px;
+                left: 944px;
+                transform: scale(1.2);
+                opacity: .9;
+            }
+            &_img_panda {
+                top: 215px;
+                left: 1639px;
+                .img_panda {
+                    width: 44px;
+                    height: 35px;
+                    margin-top: 17px;
+                }
+            }
+        }
+    }
+}

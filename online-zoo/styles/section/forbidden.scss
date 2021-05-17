@@ -1,0 +1,81 @@
+.oops{
+    padding-top: 25px;
+    .header{
+        border: none;
+    }
+    .oops_content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+        &_desc {
+            width: 873px;
+            height: 383px;
+            margin: 0 auto;
+            text-align: center;
+            h4{
+                font-family: "Merriweather";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 144px;
+                line-height: 181px;
+                text-align: center;     
+                color: #D9E8FF;
+                margin: 0;
+                padding: 0;
+            }
+            h3{
+                font-family: "Merriweather";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 145%;
+                color: #080029;
+                margin: -65px 0 30px 0;
+            }
+            p{
+                font-size: 24px;
+                line-height: 154%;
+                color: #080029;
+                margin:0 0 5px 0;
+            }
+            .back_to_mine{
+
+                button{
+                    width: 309px;
+                    height: 61px;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #FCFCFC;
+                    background: #0F0049;
+                    border-radius: 5px;
+                    border: inherit;
+                    margin-top: 50px;
+                    transition: 0.3s;
+                }
+                button:hover{
+                    color: #0F0049;
+                    background: white;
+                    border: 2px solid #0F0049;
+                    transition: 0.3s;
+                }
+            }
+        }
+        &_video{
+            width: 900px;
+            height: 507px;
+            margin: 80px auto 70px auto;
+        }
+        .click{
+            width: 425px;
+            display: inline-block;
+            margin: 0 auto 70px auto;
+            font-size: 18px;
+            line-height: 154%;
+            color: #747474;
+        }
+
+    }
+}

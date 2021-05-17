@@ -1,0 +1,135 @@
+.footer {
+    width: 100%;
+    height: 766px;
+    background: #0B0B0B;
+    padding-top: 100px;
+}
+
+.footer_cont {
+    width: 100%;
+    height: 534px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #747474;
+    &_item {
+        width: 33%;
+        height: 100%;
+    }
+    &_item_1 {
+        .logo_school {
+            margin-top: 192px;
+            width: 303px;
+            height: 62px;
+            display: flex;
+            justify-content: space-between;
+            .digital {
+                width: 118px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 19px;
+                color: #FCFCFC;
+            }
+            .logo_rs {
+                width: 128px;
+            }
+        }
+    }
+    &_item_2 {
+        h2 {
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: 0.115em;
+            font-weight: normal;
+            color: #FCFCFC;
+            margin: 0;
+        }
+        .footer_nav {
+            margin-top: 40px;
+            &_ul {
+                padding: 0%;
+                &_li {
+                    margin-top: 30px;
+                    &_link {
+                        font-weight: normal;
+                        font-size: 18px;
+                        line-height: 154%;
+                        color: #BCBCBC;
+                        transition: 0.6s;
+                    }
+                    &_link:hover,
+                    &_link:focus,
+                    &_link:active {
+                        color: #4236DB;
+                        opacity: .8;
+                    }
+                }
+            }
+        }
+    }
+    &_item_3 {
+        .cont_item_3 {
+            width: 340px;
+            h2 {
+                font-size: 22px;
+                line-height: 26px;
+                letter-spacing: 0.115em;
+                color: #FCFCFC;
+                font-weight: normal;
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                margin-top: 46px;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 154%;
+                color: #BCBCBC;
+                padding: 0;
+            }
+            .donate {
+                width: 100%;
+                height: 61px;
+                margin-top: 40px;
+                border: 2px solid #FCFCFC;
+                border-radius: 5px;
+                background: inherit;
+                color: #FCFCFC;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+            }
+            .donate:hover {
+                border: 2px solid #CC2992;
+                color: #CC2992;
+            }
+            .social_footer {
+                display: flex;
+                justify-content: space-between;
+                margin: 79px 0px;
+                padding: 0;
+                &_link {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #BCBCBC;
+                }
+                &_link:hover{
+                    color: #4236DB;
+
+                }
+            }
+        }
+    }
+}
+.footer_cont_bottom{
+    display: flex;
+    justify-content: space-between;
+    p{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 145%;
+        color: #BCBCBC;
+        margin-top: 50px;
+    }
+}

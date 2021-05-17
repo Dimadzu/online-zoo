@@ -1,0 +1,75 @@
+html{
+  margin: 0;padding: 0;box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: normal;
+    background: #FCFCFC;
+    margin: 0;padding: 0;box-sizing: border-box;
+    overflow-x: hidden;
+    
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  :active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+  ul{
+    padding: 0;
+  }
+  li{
+    list-style-type: none;
+  }
+  a{
+      text-decoration: none;
+  }
+.container{
+    width: 1920px;
+    margin: 0 auto;
+    position: relative;
+    .title_hidden_teg{
+      width: 1px;
+      height: 1px;
+      opacity: 0;
+      font-size: 0.5px;
+    }
+    
+}
+
+.wrapper{
+  width: 1432px;
+  margin: 0 auto;
+}
+//style for page zoosmap
+.wrapper_map{
+    margin: 0;
+    width: 100%;
+    height: 860px;
+    background-image: url(./../../assets/images/map.png);
+    padding-top: 25px;
+    position: relative;
+}
+//style popap (modal window)
+body.notScrollable {
+  overflow: hidden;
+}
+.cover {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 10;
+}
+.hidden {
+  display: none;
+}

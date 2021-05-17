@@ -1,0 +1,197 @@
+.fameous {
+    background: #D9E8FF;
+    height: 896px;
+}
+
+.wrapper_fameous {
+    height: 100%;
+}
+
+.fameous_wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    &_left {
+        width: 25%;
+        position: relative;
+        &_desc {
+            @include centerer-xy();
+            min-width: 320px;
+            min-height: 364px;
+            p {
+                font-size: 22px;
+                line-height: 26px;
+                letter-spacing: 0.115em;
+                color: #0B0B0B;
+            }
+            h3 {
+                font-family: "Merriweather";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 145%;
+                color: #080029;
+            }
+        }
+    }
+    &_right {
+        width: 75%;
+        height: 100%;
+        position: relative;
+        .fameous_wrapper_right_slider {
+            display: flex;
+            width: 100%;
+            height: 696px;
+            overflow: auto;
+            scroll-behavior: smooth;
+            scrollbar-width: none;
+            @include centerer-y();
+            overflow: hidden;
+            .slider_wrapper {
+                width: 1472px;
+                display: grid;
+                display: grid;
+                grid-template-columns: auto auto auto auto auto;
+                grid-template-rows: auto auto;
+                grid-auto-flow: column;
+                margin: auto;
+                box-sizing: border-box;
+                grid-gap: 40px;
+                position: relative;
+                &_item {
+                    width: 328px;
+                    height: 328px;
+                    background-image: url(./../assets/images/carousel_item_1.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    position: relative;
+                    text-align: center;
+                    .contur {
+                        width: 76px;
+                        height: 76px;
+                        @include centerer-xy();
+                        border-radius: 50px;
+                        border: 2px solid #FCFCFC;
+                        opacity: 0.6;
+                        text-align: center;
+                        transition-duration: 1s;
+                        .pluss {
+                            font-weight: 300;
+                            font-size: 44px;
+                            color: #FCFCFC;
+                            opacity: 0.8;
+                            margin: 10px auto;
+                            animation-delay: 2s;
+                            transition-duration: 1s;
+                        }
+                        .hidden_text {
+                            opacity: .1;
+                            font-size: 2px;
+                            color: #FCFCFC;
+                            margin: inherit;
+                        }
+                    }
+                    .bottom_text {
+                        @include centerer-x();
+                        bottom: 17px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FCFCFC;
+                        opacity: 0.8;
+                    }
+                    .linkHidden {
+                        @include centerer-x();
+                        bottom: 32px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #FCFCFC;
+                        opacity: .1;
+                        transition-duration: 1s;
+                    }
+                    .linkHidden::after {
+                        content: '';
+                        background-image: url(./../assets/images/arrow_right.png);
+                        display: inline-block;
+                        width: 30px;
+                        height: 15px;
+                        margin-left: 20px;
+                    }
+                }
+                &_item:nth-child(2) {
+                    background-image: url(./../assets/images/carousel_item_2.png);
+                }
+                &_item:nth-child(3) {
+                    background-image: url(./../assets/images/carousel_item_3.png);
+                }
+                &_item:nth-child(4) {
+                    background-image: url(./../assets/images/carousel_item_4.png);
+                }
+                &_item:nth-child(5) {
+                    background-image: url(./../assets/images/carousel_item_5.png);
+                }
+                &_item:nth-child(6) {
+                    background-image: url(./../assets/images/carousel_item_6.png);
+                }
+                &_item:nth-child(7) {
+                    background-image: url(./../assets/images/carousel_item_7.png);
+                }
+                &_item:nth-child(8) {
+                    background-image: url(./../assets/images/carousel_item_8.png);
+                }
+            }
+        }
+    }
+}
+
+.slider_wrapper_item:hover #contur {
+    border-radius: 50%;
+    width: 210px;
+    height: 210px;
+    animation-timing-function: ease-in-out;
+    transition-property: width height border-radius animation-timing-function;
+    transition-duration: 1s;
+}
+
+.slider_wrapper_item:hover #showText {
+    margin: 45% 0;
+    font-size: 18px;
+    opacity: .9;
+    animation-timing-function: ease-in-out;
+    transition-property: margin font-size opacity animation-timing-function;
+    transition-duration: 1s;
+}
+
+.slider_wrapper_item:hover .pluss {
+    display: none;
+    transition-duration: 1s;
+}
+
+.slider_wrapper_item:hover .bottom_text {
+    display: none;
+}
+
+.slider_wrapper_item:hover #linkHidden {
+    opacity: .8;
+    transition-property: opacity;
+    animation-timing-function: ease-in-out;
+    transition-duration: 1s;
+}
+.button_wrapper {
+    display: flex;
+    width: 155px;
+    justify-content: space-between;
+    button {
+        width: 65px;
+        height: 65px;
+        border: inherit;
+        border-radius: 50px;
+        background: #181818;
+        padding-top: 5px;
+        .arrow_left {
+            transform: rotate(-180deg)
+        }
+    }
+}

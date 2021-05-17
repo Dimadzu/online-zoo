@@ -1,0 +1,65 @@
+.payfeed{
+    width: 100%;
+    height: 1200px;
+    
+    .payfeed_start {
+        width: 824px;
+        margin-left: 184px;
+        margin-top: 100px;
+        h2{
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: 0.115em;
+            color: #0B0B0B;
+
+        }
+    }
+    .item_pay_feed {
+        width: 824px;
+        height: 312px;
+        display: flex;
+        justify-content: space-between;
+        &_img{
+            margin: auto;
+            max-width: 278px;
+            max-height: 214px;
+        }
+        &_desc{
+            width: 456px;
+            height: 166px;
+            margin: auto;
+            h3{
+                font-family: "Merriweather";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 145%;
+                color: #0F0049;
+                margin: inherit;
+            }
+            p{
+                font-size: 18px;
+                line-height: 154%;
+                color: #747474;  
+            }
+        }
+        
+    }
+    .vector_1{
+        margin-left: 55%;
+        margin-top: -35px;
+    }
+    
+    .flex{
+        display: flex;
+        margin-left: 444px;
+        margin-top: -40px;
+        .vector_2{
+           margin-top: 150px;
+           margin-right: 25px;
+        }
+    .sec3{
+        margin-left: 50px;
+        }
+    }
+}

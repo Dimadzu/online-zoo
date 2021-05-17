@@ -1,0 +1,48 @@
+section.testimonials(id="testimonials")
+    .testimonials_container
+        .testimonials_left
+            .testimonials_left_desc 
+                h2 Testimonials
+                h3 You can make us smile
+                p We want to make animal observation and interaction accessible. You can leave your wishes on how to make the service more convenient, and most importantly, more interesting for you.
+            button.leave_feedback Leave feedback
+        .testimonials_right 
+            button.see_more See more reviews
+            .testimonials_right_conteiner_slider 
+                .slider_wripper
+                    .slider_wripper_item.slider_wripper_item_1
+                        .cont_desc 
+                            .title 
+                                img.avatar_slider(src="./assets/images/avatar1.png" alt="avatar")
+                                p.name Alena Andreeva
+                            p “Had a great time with my kids and made the cute pandas happy with delicious treats. I think I will use your service more than once, thanks!”
+                    .slider_wripper_item.slider_wripper_item_2
+                        .cont_desc 
+                            .title
+                                .border 
+                                    img.avatar_slider.avatar_slider2(src="../assets/images/animal_2.png" alt="avatar")
+                                p.name Joe Brown
+                            p “Thank you for the cool service, I turn on broadcasts with animals while working in the background, it relaxes and cheers up
+                    .slider_wripper_item.slider_wripper_item_1
+                        .cont_desc 
+                            .title 
+                                img.avatar_slider(src="./assets/images/avatar1.png" alt="avatar")
+                                p.name Alena Andreeva
+                            p “Had a great time with my kids and made the cute pandas happy with delicious treats. I think I will use your service more than once, thanks!”
+                .ant-carousel-dots         
+                .button_wrapper 
+                    button.btn_left.left 
+                        img.arrow_left(src="./assets/images/arrow_right_black.png" alt="arrow")
+                    button.btn_left.right
+                        img.arrow_right(src="./assets/images/arrow_right_black.png" alt="arrow")
+    .cover.hidden
+    .form-feedback.hidden
+        p Your feedback
+        form.form-feedback__form(action="")
+            label(for="name") Your name:
+            input.form-feedback__form_name(type="text",placeholder="Ellie Coward",required)
+            label(for="email") Your e-mail:
+            input.form-feedback__form_email(type="email",placeholder="example@gmail.com",required)
+            label(for="text-feedback") Your review:
+            textarea.text-feedback(required)
+            button.send_btn.invalid(type="submit") Send for moderation
