@@ -9,15 +9,14 @@
         height: 100%;
         position: relative;
         .card {
+            display: none;
+            position: absolute;
             width: 344px;
             height: 512px;
             box-shadow: 4px 12px 22px rgba(0, 0, 0, 0.06);
             border-radius: 15px;
             text-align: center;
             background-color: #FCFCFC;
-            position: absolute;
-            left: 602px;
-            top: 228px;
             &_img {
                 width: 100%;
                 display: block;
@@ -105,6 +104,15 @@
                     height: 35px;
                     margin-top: 17px;
                 }
+            }
+        }
+        .map_item_active{
+            position: relative;
+            transform: scale(1.1);
+            opacity: .7;
+            transition: .5s;
+            .map_item_img{
+                box-shadow: 4px 13px 23px #C9B9F2;
             }
         }
     }

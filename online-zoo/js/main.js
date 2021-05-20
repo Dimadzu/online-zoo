@@ -120,8 +120,4 @@ window.addEventListener("load", function() {
     };
     clickZooMap();
 
-
-
-
-
 })

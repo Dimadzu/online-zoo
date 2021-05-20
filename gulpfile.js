@@ -35,13 +35,24 @@ gulp.task('template:compile', function buildHTML() {
         }))
         .pipe(gulp.dest('build/zoos'))
 });
-/* --------  js -------- */
+/* --------  js landing-------- */
 gulp.task('js', function() {
     return gulp.src([
-            'online-zoo/js/*.js'
+            'online-zoo/js/main.js',
+            'online-zoo/js/slider.js'
         ])
         .pipe(sourcemaps.init())
         .pipe(concat('main.js'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/js'));
+});
+/* --------  js map page -------- */
+gulp.task('jsMap', function() {
+    return gulp.src([
+            'online-zoo/js/map.js'
+        ])
+        .pipe(sourcemaps.init())
+        .pipe(concat('map.js'))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'));
 });
@@ -93,10 +104,12 @@ gulp.task('watch', function() {
     gulp.watch('online-zoo/pages/**/*.pug', gulp.series('template:compile'));
     gulp.watch('online-zoo/styles/**/*.scss', gulp.series('styles:compile'));
     gulp.watch('online-zoo/js/*.js', gulp.series('js'));
+    gulp.watch('online-zoo/js/map.js', gulp.series('jsMap'));
+
 });
 
 gulp.task('default', gulp.series(
     'clean',
-    gulp.parallel('templates:compile', 'js', 'styles:compile', 'copy', 'template:compile'),
+    gulp.parallel('templates:compile', 'js', 'jsMap', 'styles:compile', 'copy', 'template:compile'),
     gulp.parallel('watch', 'server')
 ));
