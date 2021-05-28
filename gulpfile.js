@@ -56,6 +56,16 @@ gulp.task('jsMap', function() {
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('build/js'));
 });
+/* --------  js zoos page -------- */
+gulp.task('jsZoos', function() {
+    return gulp.src([
+            'online-zoo/js/zoos.js'
+        ])
+        .pipe(sourcemaps.init())
+        .pipe(concat('zoos.js'))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('build/js'));
+});
 
 /* ------------ Styles compile ------------- */
 gulp.task('styles:compile', function() {
@@ -105,11 +115,12 @@ gulp.task('watch', function() {
     gulp.watch('online-zoo/styles/**/*.scss', gulp.series('styles:compile'));
     gulp.watch('online-zoo/js/*.js', gulp.series('js'));
     gulp.watch('online-zoo/js/map.js', gulp.series('jsMap'));
+    gulp.watch('online-zoo/js/zoos.js', gulp.series('jsZoos'));
 
 });
 
 gulp.task('default', gulp.series(
     'clean',
-    gulp.parallel('templates:compile', 'js', 'jsMap', 'styles:compile', 'copy', 'template:compile'),
+    gulp.parallel('templates:compile', 'js', 'jsMap', 'jsZoos', 'styles:compile', 'copy', 'template:compile'),
     gulp.parallel('watch', 'server')
 ));

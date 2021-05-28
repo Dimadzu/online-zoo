@@ -161,14 +161,33 @@
     grid-template-rows: 184px 184px 184px 184px;
     grid-gap: 40px;
     .item {
-        background-image: url(../../assets/images/othercams_panda1.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        text-align: center;
+        position: relative;
+        .grid_cams_video{
+            width: 100%;
+            height: 100%;
+        }
         .hidden{
-            opacity: 0;
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+            opacity: .5;
+            background-color: lighten(gray, 10%);
             transition: 0.4s;
+            text-align: center;}
+        .hidden_text{
+            position: absolute;
+            display: none;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 20;
+            transition: 0.4s;
+            text-align: center;
             h4{
                 margin: 55px 0 20px 0;
                 font-family: "Merriweather";
@@ -205,14 +224,13 @@
         }
     }
     }
-    .item:hover .hidden{
-        opacity: 1;
-        transition: 0.4s;
-    }
-    .item:nth-child(2){
-        background-image: url(../../assets/images/othercams_panda2.png);
-        
-    }
+    .item:hover .hidden {
+        display: block;
+        transition: 0.4s;}
+    .item:hover .hidden_text{
+        display: block;
+        transition: 0.4s;}
+
     .item:nth-child(3){
         background-image: url(../../assets/images/othercams_panda3.png);
     }

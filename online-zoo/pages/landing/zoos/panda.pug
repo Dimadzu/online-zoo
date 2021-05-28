@@ -66,14 +66,18 @@ html(lang='en')
           .grid_cams 
             .item
               .hidden
+              .hidden_text
                 h4 112 viewers 
-                a.watch_now(href="/")
-                  button Watch now 
+                p.watch_now(href="")
+                  button.watch_now_btn Watch now
+              iframe.grid_cams_video(src="https://www.youtube.com/embed/NOC2v3pV0Xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
             .item
               .hidden
+              .hidden_text
                 h4 112 viewers 
-                a.watch_now(href="/")
-                  button Watch now 
+                p.watch_now(href="")
+                  button.watch_now_btn Watch now
+              iframe.grid_cams_video(src="https://www.youtube.com/embed/5KeDNyrCVY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen) 
             .item
              .hidden
                 h4 112 viewers 
@@ -189,4 +193,4 @@ html(lang='en')
  
 
 
-    script(src="js/main.min.js")
+    script(src="../js/zoos.js")
