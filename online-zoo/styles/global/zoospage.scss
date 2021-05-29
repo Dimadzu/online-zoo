@@ -144,6 +144,11 @@
     color: #080029;
     margin: 0;
    }
+   .hidden_cont_othercams{
+       width: 1104px;
+       overflow: hidden;
+       scroll-behavior: smooth;
+   }
    .other_title::after{
     content: "";
     background-image: url(../../assets/images/polygon1.png);
@@ -158,7 +163,6 @@
     height: 184px;
     display: grid;
     grid-template-columns: 328px 328px 328px 328px;
-    grid-template-rows: 184px 184px 184px 184px;
     grid-gap: 40px;
     .item {
         position: relative;

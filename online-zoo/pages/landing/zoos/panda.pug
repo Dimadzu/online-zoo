@@ -63,35 +63,36 @@ html(lang='en')
       section.othercams 
         .wrapper
           h3.other_title Other cams
-          .grid_cams 
-            .item
-              .hidden
-              .hidden_text
-                h4 112 viewers 
-                p.watch_now(href="")
-                  button.watch_now_btn Watch now
-              iframe.grid_cams_video(src="https://www.youtube.com/embed/NOC2v3pV0Xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-            .item
-              .hidden
-              .hidden_text
-                h4 112 viewers 
-                p.watch_now(href="")
-                  button.watch_now_btn Watch now
-              iframe.grid_cams_video(src="https://www.youtube.com/embed/5KeDNyrCVY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen) 
-            .item
-             .hidden
-                h4 112 viewers 
-                a.watch_now(href="/")
-                  button Watch now 
-            .item
-              .hidden
-                h4 112 viewers 
-                a.watch_now(href="/")
-                  button Watch now 
+          .hidden_cont_othercams
+            .grid_cams 
+              .item
+                .hidden
+                .hidden_text
+                  h4 112 viewers 
+                  p.watch_now(href="")
+                    button.watch_now_btn Watch now
+                iframe.grid_cams_video(src="https://www.youtube.com/embed/NOC2v3pV0Xc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+              .item
+                .hidden
+                .hidden_text
+                  h4 112 viewers 
+                  p.watch_now(href="")
+                    button.watch_now_btn Watch now
+                iframe.grid_cams_video(src="https://www.youtube.com/embed/5KeDNyrCVY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen) 
+              .item
+                .hidden
+                  h4 112 viewers 
+                  a.watch_now(href="/")
+                    button Watch now 
+              .item
+                .hidden
+                  h4 112 viewers 
+                  a.watch_now(href="/")
+                    button Watch now 
           .button_wrapper 
-            button.btn_left 
+            button.btn_left.btn_left_cams
               img.arrow_left(src="../assets/images/arrow_right.png" alt="arrow")
-            button.btn_left 
+            button.btn_left.btn_right_cams 
               img.arrow_right(src="../assets/images/arrow_right.png" alt="arrow")
       section.interesting
         .wrapper 
